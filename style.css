@@ -27,7 +27,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, li, span, div {
 
   /* Telo stránky */
   body {
-    background: linear-gradient(to top, #000 0%, #fff 90%);
+  background: linear-gradient(to top, #000000 0%, #ffffff 100%);
     overflow-x: hidden;
   }
 
@@ -487,6 +487,18 @@ footer {
 
 .gallery-item:hover img {
   transform: scale(1.12);
+}
+
+/* GLOBAL BOX SHADOW PRE VŠETKY BOXY */
+.feature-card,
+.gallery-item,
+.product-card,
+.intro,
+.hero,
+footer,
+header,
+.products-grid > * {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.45) !important;
 }
 
 
