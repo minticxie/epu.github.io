@@ -19,32 +19,34 @@ body, h1, h2, h3, h4, h5, h6, p, a, li, span, div {
   text-shadow: 0 2px 4px rgba(0,0,0,0.35);
 }
 
-/* ============================= */
-/* 📱 MOBILNÁ VERZIA (PORTRAIT) */
-/* ============================= */
+/* ========================================= */
+/* 📱 MOBILNÁ VERZIA – PORTRAIT (max-width: 600px) */
+/* ========================================= */
 
 @media (max-width: 600px) {
 
   /* Telo stránky */
   body {
-    background: linear-gradient(to top, #000 0%, #fff 85%);
+    background: linear-gradient(to top, #000 0%, #fff 90%);
+    overflow-x: hidden;
   }
 
   /* MENU */
   .nav-container {
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
-    padding: 14px 20px;
+    gap: 12px;
+    padding: 16px 20px;
   }
 
   .logo {
-    font-size: 1.8rem;   /* stále veľké, ale mobilné */
+    font-size: 2.2rem;      /* veľké logo, ale mobil-friendly */
     margin-right: 0;
   }
 
   nav {
     width: 100%;
+    display: flex;
     justify-content: space-between;
     gap: 15px;
   }
@@ -55,14 +57,14 @@ body, h1, h2, h3, h4, h5, h6, p, a, li, span, div {
 
   /* HERO */
   .hero {
-    height: 45vh;          /* zmenšené pre mobily */
-    min-height: 260px;
+    height: 42vh;
+    min-height: 240px;
     border-radius: 10px;
     margin: 20px auto;
   }
 
   .hero-content {
-    left: 20px;
+    left: 18px;
     max-width: 85%;
   }
 
@@ -74,7 +76,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, li, span, div {
     font-size: 0.9rem;
   }
 
-  /* FEATURES (3 boxy) */
+  /* FEATURES – 3 boxy pod sebou */
   .features {
     flex-direction: column;
     gap: 15px;
@@ -85,9 +87,9 @@ body, h1, h2, h3, h4, h5, h6, p, a, li, span, div {
     padding: 20px;
   }
 
-  /* GALÉRIA */
+  /* GALÉRIA – 1 stĺpec */
   .gallery-grid {
-    grid-template-columns: 1fr;   /* všetky pod sebou */
+    grid-template-columns: 1fr;
     padding: 10px;
   }
 
@@ -95,10 +97,11 @@ body, h1, h2, h3, h4, h5, h6, p, a, li, span, div {
     height: 200px;
   }
 
-  /* VÝROBKY */
+  /* VÝROBKY – 1 stĺpec */
   .products-grid {
-    grid-template-columns: 1fr;   /* všetky pod sebou */
+    grid-template-columns: 1fr;
     padding: 10px;
+    max-width: 100%;
   }
 
   .product-image {
@@ -119,6 +122,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, li, span, div {
     padding: 15px;
   }
 }
+
 
 /* ----------------------------- */
 /* HORNÉ MENU */
